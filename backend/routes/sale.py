@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 
-router = APIRouter(prefix="/sales", tags=["sales"])
+router = APIRouter(tags=["sales"])
 
 
-@router.post("")
+@router.post("/sales")
 def create_sale():
     return {"message": "Sales endpoint is ready"}
