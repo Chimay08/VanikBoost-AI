@@ -1,2 +1,31 @@
-# VanikBoost-AI
-VanikBoost-AI is a retail analytics platform for vendors to track sales, fast-moving items, and business growth. Built with React.js, FastAPI, Python, and PostgreSQL, it features an AI Business Consultant that analyzes data to predict inventory needs, suggest pricing strategies, and provide actionable tips to maximize profits.
+# VanikBoost AI
+
+VanikBoost AI is a full-stack project scaffold with a FastAPI backend and a React + Vite frontend.
+
+## Project Structure
+
+```text
+backend/      Python + FastAPI app
+frontend/     React + Vite app
+database/     SQL/database setup
+tests/        Automated tests
+```
+
+## Backend
+
+```bash
+pip install -r backend/requirements.txt
+uvicorn backend.main:app --reload
+```
+
+The API starts at `http://localhost:8000`.
+
+## Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend starts at `http://localhost:5173`.
