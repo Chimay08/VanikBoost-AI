@@ -1,7 +1,8 @@
-from backend.database import connection
+from backend.database import get_connection
 
 
 def create_product(product):
+    connection = get_connection()
     query = """
         INSERT INTO products
         (store_id, name, category, cost_price, selling_price, stock)
@@ -29,6 +30,7 @@ def create_product(product):
 
 
 def get_products():
+    connection = get_connection()
     query = """
         SELECT id, name, category, cost_price, selling_price, stock
         FROM products
